@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETOILE LOJİSTİK - Güvenilir Lojistik</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV9EE296W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FWV9EE296W');
+    </script>
+</head>
+
+<body>
+
+    <body>
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button class="lang-btn active" onclick="switchLanguage('tr')" id="tr-btn">
+                <i class="fas fa-flag"></i> TR
+            </button>
+            <button class="lang-btn" onclick="switchLanguage('en')" id="en-btn">
+                <i class="fas fa-flag"></i> EN
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="img/logo001.jpeg" alt="Etoile Lojistik Logo">
+                        <div class=""></div>
+                    </div>
+                    <div class="company-name">
+                        <span class="lang-content tr active">ÈTOILE LOJİSTİK</span>
+                        <span class="lang-content en">ÈTOILE LOGISTICS</span>
+                    </div>
+
+                    <nav>
+                        <!-- Turkish Navigation -->
+                        <ul class="nav-menu lang-content tr active">
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#services">Hizmetler</a></li>
+                            <li><a href="#about">Hakkımızda</a></li>
+                            <li><a href="#contact">İletişim</a></li>
+                        </ul>
+                        <!-- English Navigation -->
+                        <ul class="nav-menu lang-content en">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+
+        <!-- Hero Slider -->
+        <section class="hero-slider" id="home">
+            <!-- Slide 1 -->
+            <div class="slide slide-1 slide-image-1 active">
+                <div class="slide-content">
+                    <!-- Turkish Content -->
+                    <div class="lang-content tr active">
+                        <h1>Güvenilir Lojistik Çözümleri</h1>
+                        <p>Türkiye'nin dört bir yanına hızlı ve güvenli kargo hizmetleri sunuyoruz</p>
+                        <a href="#services" class="cta-button">Hizmetlerimizi Keşfet</a>
+                    </div>
+                    <!-- English Content -->
+                    <div class="lang-content en">
+                        <h1>Reliable Logistics Solutions</h1>
+                        <p>We provide fast and secure cargo services throughout Turkey</p>
+                        <a href="#services" class="cta-button">Discover Our Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide slide-2 slide-image-2">
+                <div class="slide-content">
+                    <!-- Turkish Content -->
+                    <div class="lang-content tr active">
+                        <h1>Teknoloji ve Kalite</h1>
+                        <p>Modern teknoloji ile desteklenen lojistik hizmetlerimizle işinizi büyütün</p>
+                        <a href="#about" class="cta-button">Daha Fazla Bilgi</a>
+                    </div>
+                    <!-- English Content -->
+                    <div class="lang-content en">
+                        <h1>Technology and Quality</h1>
+                        <p>Grow your business with our logistics services supported by modern technology</p>
+                        <a href="#about" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide slide-3 slide-image-3">
+                <div class="slide-content">
+                    <!-- Turkish Content -->
+                    <div class="lang-content tr active">
+                        <h1>Müşteri Memnuniyeti</h1>
+                        <p>15 yılı aşkın tecrübemizle müşterilerimize en iyi hizmeti sunuyoruz</p>
+                        <a href="#contact" class="cta-button">İletişime Geç</a>
+                    </div>
+                    <!-- English Content -->
+                    <div class="lang-content en">
+                        <h1>Customer Satisfaction</h1>
+                        <p>We provide the best service to our customers with over 15 years of experience</p>
+                        <a href="#contact" class="cta-button">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <div class="nav-dot active" onclick="currentSlide(1)"></div>
+                <div class="nav-dot" onclick="currentSlide(2)"></div>
+                <div class="nav-dot" onclick="currentSlide(3)"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <!-- Turkish Content -->
+                <div class="lang-content tr active">
+                    <h2 class="section-title">Hizmetlerimiz</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <i class="fas fa-truck service-icon"></i>
+                            <h3>Nakliyat & Kargo</h3>
+                            <p>Kara, deniz ve hava yolu ile yük, eşya, kargo taşımacılığı. Kurye ve kargo hizmetleri,
+                                taşıma
+                                araçlarının alım-satımı ve kiralanması.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-car service-icon"></i>
+                            <h3>Otomotiv</h3>
+                            <p>Her çeşit motorlu taşıt (otomobil, kamyon, motosiklet vb.) alım-satımı, ithalat-ihracatı.
+                                Oto
+                                galeri açma ve işletme, yedek parça temini.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-hammer service-icon"></i>
+                            <h3>Madencilik</h3>
+                            <p>Maden ve doğal kaynakların aranması, çıkarılması, işletilmesi. Mermer, granit, traverten,
+                                kömür gibi taşların işlenmesi, ithalat ve ihracatı.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-wrench service-icon"></i>
+                            <h3>Oto Tamir Bakım</h3>
+                            <p>Her türlü araç için bakım, onarım, boya, yedek parça hizmetleri. Oto servis ağı kurma,
+                                işletme; yıkama, yağlama tesisleri kurma.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-gas-pump service-icon"></i>
+                            <h3>Petrol Ürünleri</h3>
+                            <p>Petrol ve yan ürünlerin (benzin, motorin, LPG vb.) ticareti, taşımacılığı, depolanması.
+                                Akaryakıt ve LPG istasyonları kurulması ve işletilmesi.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-tshirt service-icon"></i>
+                            <h3>Tekstil</h3>
+                            <p>Her türlü hazır giyim, mefruşat (havlu, perde vb.) üretimi, alım-satımı,
+                                ithalat-ihracatı.
+                                Dokuma, triko, çorap, iç-dış giyim üretimi ve pazarlaması.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-home service-icon"></i>
+                            <h3>Gayrimenkul</h3>
+                            <p>Arsa, daire, işyeri vb. gayrimenkullerin alım-satımı, kiralama, komisyonculuk.
+                                Projelendirme,
+                                imar işlemleri, kat mülkiyeti gibi gayrimenkul hizmetleri.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-hard-hat service-icon"></i>
+                            <h3>İnşaat & Hafriyat</h3>
+                            <p>Her türlü resmi ve özel inşaat, yol, köprü, baraj, tünel, fabrika, okul, hastane, otel,
+                                villa
+                                gibi yapıların yapımı ve taahhüt işleri.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-headset service-icon"></i>
+                            <h3>7/24 Destek</h3>
+                            <p>Müşteri hizmetleri ekibimiz her zaman yanınızda ve yardımınıza hazır. Tüm hizmetlerimiz
+                                için
+                                profesyonel destek sağlıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- English Content -->
+                <div class="lang-content en">
+                    <h2 class="section-title">Our Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <i class="fas fa-truck service-icon"></i>
+                            <h3>Transportation & Cargo</h3>
+                            <p>Land, sea and air freight transportation. Courier and cargo services, buying-selling and
+                                renting of transport vehicles.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-car service-icon"></i>
+                            <h3>Automotive</h3>
+                            <p>Buying-selling, import-export of all kinds of motor vehicles (cars, trucks, motorcycles
+                                etc.). Auto gallery operations, spare parts supply.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-hammer service-icon"></i>
+                            <h3>Mining</h3>
+                            <p>Exploration, extraction and operation of mines and natural resources. Processing, import
+                                and
+                                export of stones like marble, granite, travertine, coal.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-wrench service-icon"></i>
+                            <h3>Auto Repair & Maintenance</h3>
+                            <p>Maintenance, repair, painting, spare parts services for all types of vehicles.
+                                Establishing
+                                auto service networks, car wash and lubrication facilities.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-gas-pump service-icon"></i>
+                            <h3>Petroleum Products</h3>
+                            <p>Trading, transportation, storage of petroleum and by-products (gasoline, diesel, LPG
+                                etc.).
+                                Establishment and operation of fuel and LPG stations.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-tshirt service-icon"></i>
+                            <h3>Textile</h3>
+                            <p>Production, buying-selling, import-export of all kinds of ready-made clothing,
+                                furnishings.
+                                Production and marketing of weaving, knitwear, socks, underwear and outerwear.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-home service-icon"></i>
+                            <h3>Real Estate</h3>
+                            <p>Buying-selling, renting, brokerage of land, apartments, workplaces etc. Real estate
+                                services
+                                like project development, zoning procedures, condominium.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-hard-hat service-icon"></i>
+                            <h3>Construction & Excavation</h3>
+                            <p>Construction of all kinds of official and private buildings, roads, bridges, dams,
+                                tunnels,
+                                factories, schools, hospitals, hotels, villas and contract works.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-headset service-icon"></i>
+                            <h3>24/7 Support</h3>
+                            <p>Our customer service team is always with you and ready to help. We provide professional
+                                support for all our services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <!-- Turkish Content -->
+                        <div class="lang-content tr active">
+                            <h2>Hakkımızda</h2>
+                            <p>ETOILE LOJİSTİK olarak, 15 yılı aşkın sektör tecrübemizle Türkiye'nin önde gelen lojistik
+                                firmalarından biriyiz. Müşteri memnuniyetini ön planda tutarak, güvenilir ve kaliteli
+                                hizmet
+                                anlayışımızla sektörde fark yaratıyoruz.</p>
+                            <p>Modern teknoloji altyapımız ve uzman kadromuzla, nakliyat, otomotiv, madencilik, tekstil
+                                ve
+                                inşaat sektörlerinde geniş bir hizmet yelpazesi sunuyoruz. Sürekli gelişim ve yenilik
+                                ilkelerimizle, müşterilerimizin beklentilerini aşmaya odaklanıyoruz.</p>
+                            <p>Kalite, güvenilirlik ve müşteri odaklı yaklaşımımızla, işinizin büyümesine katkı
+                                sağlamaya
+                                devam ediyoruz.</p>
+                        </div>
+                        <!-- English Content -->
+                        <div class="lang-content en">
+                            <h2>About Us</h2>
+                            <p>As ETOILE LOGISTICS, we are one of Turkey's leading logistics companies with over 15
+                                years of
+                                industry experience. We make a difference in the sector with our reliable and quality
+                                service approach, prioritizing customer satisfaction.</p>
+                            <p>With our modern technology infrastructure and expert staff, we offer a wide range of
+                                services
+                                in transportation, automotive, mining, textile and construction sectors. With our
+                                principles
+                                of continuous development and innovation, we focus on exceeding our customers'
+                                expectations.
+                            </p>
+                            <p>We continue to contribute to the growth of your business with our quality, reliability
+                                and
+                                customer-oriented approach.</p>
+                        </div>
+
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <!-- Turkish -->
+                                <span class="stat-label lang-content tr active">Yıl Tecrübe</span>
+                                <!-- English -->
+                                <span class="stat-label lang-content en">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1000+</span>
+                                <!-- Turkish -->
+                                <span class="stat-label lang-content tr active">Mutlu Müşteri</span>
+                                <!-- English -->
+                                <span class="stat-label lang-content en">Happy Customers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <!-- Turkish -->
+                                <span class="stat-label lang-content tr active">Şehir</span>
+                                <!-- English -->
+                                <span class="stat-label lang-content en">Cities</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <!-- Turkish -->
+                                <span class="stat-label lang-content tr active">Destek</span>
+                                <!-- English -->
+                                <span class="stat-label lang-content en">Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/altbölüm001.png" alt="Hakkımızda Fotoğrafı" style="width: 100%; height: auto;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <!-- Turkish Content -->
+                        <div class="lang-content tr active">
+                            <h3>İletişim Bilgileri</h3>
+                            <div class="contact-methods">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="contact-text">
+                                        <div class="contact-label">Telefon</div>
+                                        <div class="contact-value">Deniz Randa: +90 534 472 49 40<br>
+                                            Selim Randa: +90 536 548 12 39<br>
+                                            Mehmet Kültekin: +90 530 546 70 88 </div>
+                                    </div>
+                                </div>
+                                <div class="contact-item"
+                                    onclick="window.open('mailto:etoile.lojistik@gmail.com', '_self')">
+                                    <i class="fas fa-envelope"></i>
+                                    <div class="contact-text">
+                                        <div class="contact-label">E-posta</div>
+                                        <div class="contact-value">etoile.lojistik@gmail.com</div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div class="contact-text">
+                                        <div class="contact-label">Çalışma Saatleri</div>
+                                        <div class="contact-value">24/7 Hizmet</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-buttons">
+                                <a href="https://wa.me/905344724940?text=Merhaba, hizmetleriniz hakkında bilgi almak istiyorum."
+                                    target="_blank" class="social-btn whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </a>
+                                <a href="mailto:etoile.lojistik@gmail.com" class="social-btn email-btn">
+                                    <i class="fas fa-envelope"></i>
+                                    E-posta Gönder
+                                </a>
+                                <a href="tel:+905344724940" class="social-btn phone-btn">
+                                    <i class="fas fa-phone"></i>
+                                    Hemen Ara
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- English Content -->
+                        <div class="lang-content en">
+                            <h3>Contact Information</h3>
+                            <div class="contact-methods">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="contact-text">
+                                        <div class="contact-label">Phone</div>
+                                        <div class="contact-value">Deniz Randa: +90 534 472 49 40<br>
+                                            Selim Randa: +90 536 548 12 39<br>
+                                            Mehmet Kültekin: +90 530 546 70 88</div>
+                                    </div>
+                                </div>
+                                <div class="contact-item" onclick="window.open('etoile.lojistik@gmail.com', '_self')">
+                                    <i class="fas fa-envelope"></i>
+                                    <div class="contact-text">
+                                        <div class="contact-label">Email</div>
+                                        <div class="contact-value">etoile.lojistik@gmail.com</div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div class="contact-text">
+                                        <div class="contact-label">Working Hours</div>
+                                        <div class="contact-value">24/7 Service</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-buttons">
+                                <a href="https://wa.me/905344724940?text=Hello, I would like to get information about your services."
+                                    target="_blank" class="social-btn whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </a>
+                                <a href="mailto:etoile.lojistik@gmail.com" class="social-btn email-btn">
+                                    <i class="fas fa-envelope"></i>
+                                    Send Email
+                                </a>
+                                <a href="tel:+905344724940" class="social-btn phone-btn">
+                                    <i class="fas fa-phone"></i>
+                                    Call Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <!-- Turkish Content -->
+                <div class="lang-content tr active">
+                    <p>&copy; 2025 ETOILE LOJİSTİK. Tüm hakları saklıdır.</p>
+                </div>
+                <!-- English Content -->
+                <div class="lang-content en">
+                    <p>&copy; 2025 ETOILE LOGISTICS. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Language switching functionality
+            function switchLanguage(lang) {
+                // Hide all language content
+                const allLangContent = document.querySelectorAll('.lang-content');
+                allLangContent.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // Show selected language content
+                const selectedLangContent = document.querySelectorAll('.lang-content.' + lang);
+                selectedLangContent.forEach(content => {
+                    content.classList.add('active');
+                });
+
+                // Update language buttons
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById(lang + '-btn').classList.add('active');
+
+                // Update page language attribute
+                document.documentElement.lang = lang;
+            }
+
+            // Slider functionality
+            let currentSlideIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            const navDots = document.querySelectorAll('.nav-dot');
+
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                navDots.forEach(dot => dot.classList.remove('active'));
+
+                slides[index].classList.add('active');
+                navDots[index].classList.add('active');
+            }
+
+            function currentSlide(index) {
+                currentSlideIndex = index - 1;
+                showSlide(currentSlideIndex);
+            }
+
+            function nextSlide() {
+                currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+                showSlide(currentSlideIndex);
+            }
+
+            // Auto-advance slides
+            setInterval(nextSlide, 5000);
+
+            // Header scroll effect
+            window.addEventListener('scroll', function () {
+                const header = document.getElementById('header');
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Form submission
+            document.addEventListener('DOMContentLoaded', function () {
+                const forms = document.querySelectorAll('form');
+                forms.forEach(form => {
+                    form.addEventListener('submit', function (e) {
+                        e.preventDefault();
+
+                        // Get form data
+                        const formData = new FormData(this);
+                        const name = formData.get('name');
+                        const email = formData.get('email');
+                        const phone = formData.get('phone');
+                        const message = formData.get('message');
+
+                        // Create WhatsApp message
+                        const whatsappMessage = `Merhaba! 
+    İsim: ${name}
+    E-posta: ${email}
+    Telefon: ${phone}
+    Mesaj: ${message}`;
+
+                        // Open WhatsApp with the message
+                        const whatsappUrl = `https://wa.me/905555555555?text=${encodeURIComponent(whatsappMessage)}`;
+                        window.open(whatsappUrl, '_blank');
+
+                        // Reset form
+                        this.reset();
+
+                        // Show success message
+                        alert('Mesajınız WhatsApp üzerinden gönderildi!');
+                    });
+                });
+            });
+
+
+        </script>
+    </body>
+
+</html>
